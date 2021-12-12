@@ -1,2 +1,0 @@
-# SeleniumTest
-Selenium learning codes
