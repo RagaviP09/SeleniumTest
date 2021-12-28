@@ -60,3 +60,118 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-28 15:31:34.997
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-12-28 15:55:20.125
+!MESSAGE Connection to https://download.eclipse.org/releases/2021-09/compositeContent.jar failed on Connect to download.eclipse.org:443 [download.eclipse.org/198.41.30.199] failed: Connection timed out: no further information. Retry attempt 0 started
+!STACK 0
+org.apache.http.conn.HttpHostConnectException: Connect to download.eclipse.org:443 [download.eclipse.org/198.41.30.199] failed: Connection timed out: no further information
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 13 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-12-28 15:56:02.434
+!MESSAGE Connection to https://download.eclipse.org/eclipse/updates/4.21/p2.index failed on Connect to download.eclipse.org:443 [download.eclipse.org/198.41.30.199] failed: Connection timed out: no further information. Retry attempt 0 started
+!STACK 0
+org.apache.http.conn.HttpHostConnectException: Connect to download.eclipse.org:443 [download.eclipse.org/198.41.30.199] failed: Connection timed out: no further information
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1003)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:995)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 13 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-28 16:05:14.774
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-28 16:05:14.776
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2021-12-28 16:06:12.192
+!MESSAGE Unexpected exception: Cannot complete request to https://marketplace.eclipse.orginstall/error/report: status code: 400, reason phrase: Bad Request
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.orginstall/error/report: status code: 400, reason phrase: Bad Request
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.reportInstallError(DefaultMarketplaceService.java:829)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.reportInstallError(CachingMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.installErrorReport(MarketplaceDiscoveryStrategy.java:959)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.installErrorReport(MarketplaceCatalog.java:621)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceWizard$3.run(MarketplaceWizard.java:854)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.http.client.HttpResponseException: status code: 400, reason phrase: Bad Request
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:89)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponse(RequestTemplate.java:57)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:42)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.reportInstallError(DefaultMarketplaceService.java:820)
+	... 5 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2021-12-28 16:06:12.194
+!MESSAGE Cannot complete request to https://marketplace.eclipse.orginstall/error/report: status code: 400, reason phrase: Bad Request
+!STACK 0
+org.apache.http.client.HttpResponseException: status code: 400, reason phrase: Bad Request
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:89)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponse(RequestTemplate.java:57)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:42)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.reportInstallError(DefaultMarketplaceService.java:820)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.reportInstallError(CachingMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.installErrorReport(MarketplaceDiscoveryStrategy.java:959)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.installErrorReport(MarketplaceCatalog.java:621)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceWizard$3.run(MarketplaceWizard.java:854)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2021-12-28 16:06:12.281
+!MESSAGE Problems occurred while performing provisioning operation: operation plan must be resolved
+!STACK 0
+java.lang.IllegalStateException: operation plan must be resolved
+	at org.eclipse.equinox.internal.p2.ui.ProvUI.toCurrentJREOperation(ProvUI.java:338)
+	at org.eclipse.equinox.internal.p2.ui.ProvUI.toCompabilityWithCurrentJREProvisioningPlan(ProvUI.java:325)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceWizard.lambda$5(MarketplaceWizard.java:876)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-12-28 16:06:31.550
+!MESSAGE No repository found at http://rlogiacco.github.com/Natural.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-12-28 16:06:39.198
+!MESSAGE No repository found at http://rlogiacco.github.com/Natural.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-28 16:06:41.281
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-28 16:06:41.285
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
